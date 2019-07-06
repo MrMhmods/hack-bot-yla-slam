@@ -2,16 +2,19 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}! , ${client.user.id} , ${client.guilds.size} `);
+  console.log(`Logged in as ${client.user.tag}!`);
 });
 
+
 client.on('guildMemberAdd', member => {
-const mohamed= member.guild.channels.get("585389959113080832");
-if(!mohamed) return;
-if(mohamed) {
-setTimeout(() => mohamed.send(`**Welcome To Max. :leaves: ** ..
-`), 4000)        
-}
+  const channel = member.guild.channels.find(ch => ch.name === 'max');
+  // Do nothing if the channel wasn't found on this server
+  if (!channel) return;
+  // Send the message, mentioning the member
+  channel.send(`**Welcome To Max. :leaves: ** .. ${member}`);
 });
+
+
+
 
 bot.login(process.env.BOT_TOKEN);
